@@ -1,4 +1,4 @@
-let { getBooks, getBookById, addBook } = require('./book');
+let { getBooks, getBookById, addBook } = require('../book');
 const express = require('express');
 const { resolve } = require('path');
 
@@ -26,3 +26,6 @@ app.get('/api/books', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running on http://localhost:${port}`);
 });
+
+
+module.exports = app;
