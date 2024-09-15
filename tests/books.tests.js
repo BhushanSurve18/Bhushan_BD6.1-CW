@@ -25,10 +25,9 @@ it("should return undefined for a non-existant book", (){
 it("should added new book", ()=>{
     let newBook = {title: "New Book", autthor: "Author Name"};
 let addedBook = addBook(newBook);
-addedBook.toEqual({id: 5, title: "New Book", autthor: "Author Name"})
-})
-
+addedBook.toEqual({id: 5, title: "New Book", autthor: "Author Name"});
 const books = getBooks();
 expect(books.length).toBe(5)
+});
 
 });
