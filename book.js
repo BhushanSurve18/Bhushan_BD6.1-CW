@@ -13,7 +13,7 @@ function getBookById(id) {
   return books.find((book) => book.id === id);
 }
 
-function addBook() {
+function addBook(book) {
   let newBook = { id: books.length + 1, ...book };
   books.push(newBook);
   return newBook;
